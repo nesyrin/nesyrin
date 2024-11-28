@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nesyrin</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"/>
+  </head>
+  <body>
+
+    <header class="header">
+      <a href="#home" class="logo">
+        Nesyrin<span>Syaharani</span></a>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#service">Skill</a>
+        <a href="#galeri">Galery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      
+    </header>
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1>Hi, It's <span>Nesyrin</span></h1>
+        <h3>I'm a <span>Web Developer</span></h3>
+        <p>
+          Saya adalah seorang web developer dengan keahlian dalam pengembangan front-end.
+          Saya memiliki keterampilan dalam HTML, CSS, JavaScript.
+        </p>
+
+        <div class="social-icons">
+          <a href="#">
+            <i class="bx bxl-github"></i>
+          </a>
+          <a href="#">
+            <i class="bx bxl-linkedin-square"></i>
+          </a>
+          <a href="#">
+            <i class="bx bxl-instagram-alt"></i>
+          </a>
+        </div>
+
+        <div class="btn-group">
+          <a href="#contact" class="btn">Hire</a>
+          <a href="#contact" class="btn">Contact</a>
+        </div>
+      </div>
+
+      <div class="home-img">
+        <img src="WhatsApp Image 2024-11-26 at 07.24.54_f8a06acf.jpg" alt="Nesyrin's Profile Picture" style="width: 200px;" />
+      </div>
+    </section>
+    <section class="service" id="service">
+
+    <h2 class="heading">Skill</h2>
+
+    <div class="service-container">
+        <div class="service-box">
+            <div class="service-info">
+                <i class="bx bxl-figma"></i>
+                <h4>UI/UX Design</h4>
+                <p>saya seorang UI/UX designer pemula yang senang menciptakan pengalaman pengguna yang sederhana,
+                 menarik, dan mudah digunakan.Menggunakan alat seperti Figma,canva,Photoshop, dan lain-lain.</p>
+            </div>
+        </div>
+
+        <div class="service-box">
+            <div class="service-info">
+                <i class="bx bx-code"></i>
+                <h4>Frontend Development</h4>
+                <p>Menggunakan HTML, CSS, dan JavaScript untuk menciptakan tampilan yang menarik
+                  dan interaktif. Saya memiliki pemahaman mendalam tentang desain responsif,
+                  sehingga situs web yang saya buat terlihat optimal di berbagai perangkat.</p>
+            </div>
+        </div>
+
+    </div>
+    </section>
+
+    <section class="galeri" id="galeri">
+        <h2 class="heading">My <span>Gallery</span></h2>
+        
+        <div class="galeri-container">
+            <div class="galeri-box">
+                <img src="WhatsApp Image 2024-11-26 at 07.47.45_99b3eb54.jpg" alt="Project 1">
+                <div class="galeri-layer">
+                  <a href="project1.png"></a>
+                    <h4>Web Design</h4>
+                    <p>Membuat kartu undangan online </p>
+                </div>
+            </div>
+    
+            <div class="galeri-box">
+                <img src="WhatsApp Image 2024-11-26 at 07.47.45_b57553ed.jpg" alt="Project 2">
+                <div class="galeri-layer">
+                  <a href="project2.png"></a>
+                    <h4>Web Design</h4>
+                    <p>Membuat web Portfolio</p>
+                </div>
+            </div>
+    
+            <div class="galeri-box">
+                <img src="WhatsApp Image 2024-11-26 at 07.47.46_75faa1e8.jpg" alt="Project 3">
+                <div class="galeri-layer">
+                  <a href="project3.png"></a>
+                    <h4>UI/UX Design</h4>
+                    <p>Membuat desain kaos untuk kelas</p>
+
+                </div>
+            </div>
+    
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+          <form id="contactForm" onsubmit="return validateForm(event)">
+
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" id="name" placeholder="full Name">
+                    <input type="email" id="email" placeholder="Email">
+                </div>
+
+                <div class="input-box">
+                    <input type="number" id="phone" placeholder="Phone Number">
+                   
+                </div>
+            </div>
+
+            <div class="input-group-2">
+                <textarea name="" id="message" placeholder="Your Massage" cols="30"
+                rows="10"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </div>
+
+        </form>
+    </section>
+
+    <footer class="footer">
+
+      <div class="social-icons">
+        <a href="#">
+          <i class="bx bxl-github"></i>
+        </a>
+
+        <a href="#">
+          <i class="bx bxl-linkedin-square"></i>
+        </a>
+
+        <a href="#">
+          <i class="bx bxl-instagram-alt"></i>
+        </a>
+
+      </div>
+
+      <ul class="list">
+        <li>
+          <a href="#">FAQ</a>
+        </li>
+
+        <li>
+          <a href="#service">Service</a>
+        </li>
+        <li>
+          <a href="#galeri">Galery</a>
+        </li>
+
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+
+      </ul> 
+
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+      <p class="copyright">
+        © Nesyrin Syaharani | All Rights Reserved
+      </p>
+
+    </footer>
+
+     <script src="script.js"></script>
+  </body>
+</html>
